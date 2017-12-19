@@ -1,8 +1,18 @@
+var sayName = function(x, y, z) {
+  console.log('My name is ' + this.name + ' and I know ' + x + y + z);
+};
+
+var languages = ['JavaScript', 'Ruby', 'Python'];
+
+var bitch = {
+  name: 'Stacey',
+  age: 34
+};
+
+sayName.apply(bitch, languages);
 
 
-
-
-/********************** ternary operators. in lesson with if/else***
+/********************** ternary operators. in lesson with if/else(c0ntrol flow)***
 let isLocked = false;
 
 isLocked ? console.log('You will need a key to open the door.') : console.log('You will not need a key to open the door.');
